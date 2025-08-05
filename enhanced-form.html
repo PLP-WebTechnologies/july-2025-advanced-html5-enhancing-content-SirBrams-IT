@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enhanced Form Showcase</title>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to Our Web Showcase</h1>
+    <p>This page demonstrates the use of semantic HTML elements including lists, tables, media, and a fully functional HTML5 form with validation.</p>
+  </header>
+
+  <section>
+    <h2>Popular Programming Languages</h2>
+    <ul>
+      <li>Python</li>
+      <li>JavaScript</li>
+      <li>Java</li>
+      <li>C#</li>
+      <li>Go</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Course Schedule</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Course</th>
+          <th>Instructor</th>
+          <th>Day</th>
+          <th>Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>HTML & CSS</td>
+          <td>Bramuel Simiyu</td>
+          <td>Monday</td>
+          <td>10:00 AM</td>
+        </tr>
+        <tr>
+          <td>JavaScript Basics</td>
+          <td>John Abraham</td>
+          <td>Wednesday</td>
+          <td>2:00 PM</td>
+        </tr>
+        <tr>
+          <td>Python for Beginners</td>
+          <td>Winny Bramuel</td>
+          <td>Friday</td>
+          <td>11:00 AM</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Watch Our Introduction Video</h2>
+    <video controls width="100%">
+      <source src="sample.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <section>
+    <h2>Sign Up for a Course</h2>
+    <form action="/submit" method="POST" autocomplete="on">
+
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" required placeholder="e.g. SirBrams Bramuel" minlength="3">
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required placeholder="e.g. sirbrams.b@gmail.com">
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="10-digit phone number">
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" required>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Course Selection</legend>
+
+        <label for="course">Choose a Course</label>
+        <select id="course" name="course" required>
+          <option value="">-- Select --</option>
+          <option value="html">HTML & CSS</option>
+          <option value="js">JavaScript Basics</option>
+          <option value="python">Python for Beginners</option>
+        </select>
+
+        <label for="experience">Previous Experience (if any)</label>
+        <textarea id="experience" name="experience" rows="4" placeholder="Briefly describe your experience..."></textarea>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Account Credentials</legend>
+
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required minlength="4" placeholder="Choose a username">
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required minlength="6" placeholder="Min 6 characters">
+
+        <label for="confirm_password">Confirm Password</label>
+        <input type="password" id="confirm_password" name="confirm_password" required minlength="6" placeholder="Repeat password">
+
+        <label>
+          <input type="checkbox" name="terms" required>
+          I agree to the terms and conditions
+        </label>
+
+      </fieldset>
+
+      <input type="submit" value="Submit Application">
+
+    </form>
+  </section> <br>
+
+  <footer>
+    <p>&copy; 2025 SirBrams. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
